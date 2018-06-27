@@ -1,29 +1,19 @@
 # prereqs: iterators, hashes, conditional logic
 # Given a hash with numeric values, return the key for the smallest value
 
-#collect
-#|key, value|
-#key
-
+#collect. return only the key!
 #empty hash = NIL
+#smallest value SORT last? How to sort w/o using sort. need to iterate and compare each time!
+# would these methods work?? flatten (change into an array but then would need to change back into a has?)
+#  keep_if
 
-#smallest value SORT last?
-
-  #name_hash.flatten do |key, value|
-
-
-#  value.flatten.
-
-#  keep_if { |key, value|
-def key_for_min_value(hash)
-  smallest_key = nil
-  tiniest_value = nil
-  hash.each do |key, value|
-    if tiniest_value == nil || value < tiniest_value
-      tiniest_value = value
-      smallest_key = key
+def key_for_min_value(name_hash)
+  smallest_value = nil
+  
+  name_hash.each do |key, value|
+    if smallest_value == nil || value < smallest_value
+    smallest_value = value
     end
   end
-  smallest_key
+return key[value]
 end
-
