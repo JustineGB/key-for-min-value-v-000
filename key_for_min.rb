@@ -11,7 +11,7 @@ def key_for_min_value(name_hash)
   smallest_value = nil
   corresponding_key = nil
   name_hash.each do |key, value|
-  if name_hash.empty? 
+  if name_hash.empty?
     return hil
   elsif value < smallest_value
     smallest_value = value
