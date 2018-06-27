@@ -18,5 +18,11 @@
 
 def key_for_min_value(name_hash)
   smallest_value = nil
-  name_hash.each_pair { |key, value| puts "#{key.inspect} maps to #{value}"}
-end 
+  name_hash.each do |key, value|
+    if value < smallest_value
+      smallest_value = value
+      return key
+    else
+      return nil
+end
+end
