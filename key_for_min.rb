@@ -15,7 +15,8 @@ def key_for_min_value(name_hash)
   if smallest_value = nil || value < smallest_value
     smallest_value = value
     corresponding_key = key
-      return corresponding_key
-    end
   end
+end
+      return corresponding_key
+  
 end
