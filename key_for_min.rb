@@ -9,11 +9,13 @@
 
 def key_for_min_value(name_hash)
   smallest_value = nil
-  
+  corresponding_key = nil
+
   name_hash.each do |key, value|
     if smallest_value == nil || value < smallest_value
     smallest_value = value
+    corresponding_key = key
     end
   end
-return key[value]
+return corresponding_key
 end
