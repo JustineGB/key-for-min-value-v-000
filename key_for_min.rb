@@ -17,5 +17,6 @@
 #  keep_if { |key, value|
 
 def key_for_min_value(name_hash)
-  hash.each_pair { |key, value| puts "#{key.inspect} maps to #{value}"}
+  smallest_value = nil
+  name_hash.each_pair { |key, value| puts "#{key.inspect} maps to #{value}"}
 end 
